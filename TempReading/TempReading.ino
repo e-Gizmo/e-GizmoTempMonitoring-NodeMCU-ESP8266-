@@ -61,11 +61,14 @@ void loop() {
     Serial.print("Sensor Not Connected");
     sensorError=true;
   } else {
-    Serial.println("Temperature In Celcius: ");
+    Serial.println("Celcius: ");
     Serial.print(c);
     Serial.println(" *C");
+    Serial.println("Farenheit: ");
+    Serial.print(f);
+    Serial.println(" *F");
     Serial.println("Humidity: ");
-    Serial.println(h);
+    Serial.print(h);
     Serial.println(" %");
   }
   // If there is any issue in sensor connections, it will send 000 as String.
